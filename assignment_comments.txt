@@ -1,0 +1,15 @@
+Normalization assignment - Part 3
+
+Source URL:
+https://www.iana.org/assignments/http-status-codes
+
+What I did:
+I copied one continuous section of visible HTTP status code registry text into raw_data.txt. The input includes headings, notes, unassigned ranges, and 20 individual status codes. My Bash script reads the text, skips lines that do not start with one three-digit status code, trims extra spaces, and prints a CSV header and the code, description, and reference fields. I ran the script with the input file and redirected its standard output to normalized.csv. The output contains 20 data records.
+
+What still needs cleanup:
+The script works for this section, but it assumes each individual code is on one line and separated with pipe characters. For other websites, I would need to adjust the parsing rules. It skips unassigned code ranges instead of creating separate records for them. A more complete script should escape embedded quotation marks correctly, validate missing fields, and check the results against the source for accuracy.
+
+GitHub repository URL:
+[PASTE YOUR NEW REPOSITORY URL HERE AFTER UPLOADING THE FILES]
+
+GitHub profile: https://github.com/samqasem05

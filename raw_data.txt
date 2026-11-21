@@ -1,0 +1,36 @@
+Hypertext Transfer Protocol (HTTP) Status Code Registry
+HTTP Status Codes
+Registration Procedure(s)
+IETF Review
+Reference
+RFC 9110, Section 16.2.1: HTTP Semantics
+Note
+1xx: Informational - Request received, continuing process
+2xx: Success - The action was successfully received, understood, and accepted
+3xx: Redirection - Further action must be taken in order to complete the request
+4xx: Client Error - The request contains bad syntax or cannot be fulfilled
+5xx: Server Error - The server failed to fulfill an apparently valid request
+Value | Description | Reference
+100 | Continue | RFC 9110, Section 15.2.1
+101 | Switching Protocols | RFC 9110, Section 15.2.2
+102 | Processing | RFC 2518
+103 | Early Hints | RFC 8297
+104 | Upload Resumption Supported (TEMPORARY - registered 2024-11-13, extension registered 2025-09-15, expires 2026-11-13) | draft-ietf-httpbis-resumable-upload-05
+105-199 | Unassigned |
+200 | OK | RFC 9110, Section 15.3.1
+201 | Created | RFC 9110, Section 15.3.2
+202 | Accepted | RFC 9110, Section 15.3.3
+203 | Non-Authoritative Information | RFC 9110, Section 15.3.4
+204 | No Content | RFC 9110, Section 15.3.5
+205 | Reset Content | RFC 9110, Section 15.3.6
+206 | Partial Content | RFC 9110, Section 15.3.7
+207 | Multi-Status | RFC 4918
+208 | Already Reported | RFC 5842
+209-225 | Unassigned |
+226 | IM Used | RFC 3229
+227-299 | Unassigned |
+300 | Multiple Choices | RFC 9110, Section 15.4.1
+301 | Moved Permanently | RFC 9110, Section 15.4.2
+302 | Found | RFC 9110, Section 15.4.3
+303 | See Other | RFC 9110, Section 15.4.4
+304 | Not Modified | RFC 9110, Section 15.4.5
